@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<title>Spooky Halloween Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+
+
+
+
+<p id="demo"></p>
+
+
+<button onclick="myFunction()">WELCOME</button>
+<button onclick="myFunction1()">GET READY</button>
+
+<script>
+
+	function myFunction() {
+  
+
+
+var intro = ["Welcome", "To My", "Spooky", "Scary", "Site", "Enjoy"];
+var text = "";
+var i;
+for (i = 0; i < intro.length; i++) {
+    text += intro[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+
+}
+
+
+function myFunction1() {
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "skel.gif");
+    x.setAttribute("width", "100%");
+    x.setAttribute("height", "100%");
+    x.setAttribute("alt", "Spooky scary skeletons");
+    document.body.appendChild(x);
+}
+
+
+
+  function play(){
+       var audio = document.getElementById("audio");
+       audio.play();  }
+
+
+
+
+</script>
+
+
+<input type="button" value="GET SPOOKY"  onclick="play()">
+<audio id="audio" src="spooky.mp3" ></audio>
+
+
+
+
+</body>
+</html>
+
